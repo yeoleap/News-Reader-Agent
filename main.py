@@ -11,23 +11,23 @@ class NewsReaderAgent:
     
     # agent 를 만드려면 함수에 agent decorator 를 붙여야 한다.
     @agent
-    def news_hunter_agent(self) -> Agent:
+    def blind_post_hunter(self) -> Agent:
         return Agent(
-            config=self.agents_config["news_hunter_agent"],
+            config=self.agents_config["blind_post_hunter"],
             tools=[search_tool, scrape_tool]
         )
     
     @agent
-    def summarizer_agent(self) -> Agent:
+    def blind_sentiment_summarizer(self) -> Agent:
         return Agent(
-            config=self.agents_config["summarizer_agent"],
+            config=self.agents_config["blind_sentiment_summarizer"],
             tools=[scrape_tool]
         )
 
     @agent
-    def curator_agent(self) -> Agent:
+    def industry_trend_curator(self) -> Agent:
         return Agent(
-            config=self.agents_config["curator_agent"]
+            config=self.agents_config["industry_trend_curator"]
         )
 
     @task
@@ -59,7 +59,7 @@ class NewsReaderAgent:
 # NewsReaderAgent().crew().kickoff(inputs={"topic": "Cambodia Thai War"})
 
 ## 각 개별 작업의 출력에 접근하는 방법
-result = NewsReaderAgent().crew().kickoff(inputs={"topic": "Cambodia Thai War"})
+result = NewsReaderAgent().crew().kickoff(inputs={"topic": "주담대 블라인드"})
 
 for task_output in result.tasks_output:
     print(task_output)

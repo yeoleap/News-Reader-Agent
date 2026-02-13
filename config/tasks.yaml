@@ -1,237 +1,108 @@
 content_harvesting_task:
   description: >
-    Collect recent news articles based on {topic}.
+    {topic}에 관한 블라인드(TeamBlind Korea)의 최신 게시글과 반응을 수집하십시오.
 
-    Steps include:
-    1. Use the search tool to search for recent news articles about {topic}
-    2. From the search results, identify URLs from credible sources.
+    수행 단계:
+    1. 검색 도구를 사용하여 {topic} 관련 게시글을 찾으십시오.
+       **필수: 모든 검색 쿼리에 "site:teamblind.com/kr"를 추가하여 검색 범위를 제한하십시오.**
+       예시: {topic} site:teamblind.com/kr
 
-    3. **IMPORTANT: Only select actual article pages, not topic hubs or tag listings**
-      You must filter out any URLs that are likely to be:
-      - Topic/tag/section index pages (e.g., URLs containing "/tag/", "/topic/", "/hub/", "/section/", "/category/")
-      - Pages with no unique headline or timestamp
-      - Pages that only contain a list of other stories or links
-      ✅ Acceptable article URLs:
-      - Should contain a full article with body text
-      - Should have a clear headline and publication date
-      - Often include slugs like `/2023/10/.../story-title` or unique story IDs
-      ❌ Reject the following types of URLs:
-      - https://www.nytimes.com/topic/ 
-      - https://apnews.com/hub
-      - https://aljazeera.com/tag
-      These are topic collections, not individual articles.
+    2. 검색 결과에서 '게시글 목록'이나 '태그 페이지'가 아닌 실제 **개별 포스팅 URL**만 추출하십시오.
+       - 제외 대상: /topics/, /article/ (뉴스섹션), /tag/ 등이 포함된 인덱스 페이지
+       - 허용 대상: /post/ 가 포함된 개별 커뮤니티 게시글 URL
+       **중요: 검색 결과에서 발견된 모든 유효한 URL을 리스트로 만드십시오.**
 
-    4. For each **accepted** article URL:
-      - Use the scrape tool to extract the full article content from the URL
-      - Extract metadata: title, source, publication date and complete article text.
+    3. **반드시 모든** 추출된 URL에 대해 스크래핑 도구를 사용하여 다음 정보를 수집하십시오:
+       **주의: 각 URL을 하나씩 순회하며 전부 스크래핑해야 합니다. 1-2개만 하고 멈추지 마십시오.**
+       - 게시글 제목 및 본문
+       - 작성 시간 (가능한 경우)
+       - **핵심 댓글 및 반응 (댓글의 전반적인 분위기를 파악할 수 있는 텍스트)**
 
-    5. Apply intelligent filtering to remove:
-      - Articles shorter than 200 words
-      - Articles older than 48 hours (unless specifically relevant)
-      - Pages that failed to scrape or contain no substantial content
-
-    6. Classify each article into appropriate topic categories (Tech, Politics, Business, Science, Health, Sports, International, etc.)
-
-    7. Assign credibility scores (1-10) based on source reputation and content quality
-
-    8. Assign relevance scores (1-10) based on how well the article matches the requested {topic}
+    4. 필터링 기준:
+       - 내용이 너무 부실하거나 광고성 글 제외
+       - {topic}과의 관련성 점수(1-10) 부여
+       - 게시글의 호응도(댓글 수, 추천 수 추정치)를 기반으로 영향력 점수(1-10) 부여
 
   expected_output: >
-    A well-structured markdown document containing the collected news articles with this exact format:
+    다음 형식을 포함하는 마크다운 문서:
+    # Blind Postings Collection: {topic}
 
-    # News Articles Collection: {topic}
-
-    **Collection Summary**
-    - Total articles found:
-    - Articles after filtering:
-    - Duplicates removed:
-    - Sources accessed:
-    - Search queries used:
-    - Search timestamp:
+    - 수집된 총 게시글 수: [검색 결과로 찾은 URL 개수]
+    - 유효 포스팅 수: [실제 스크래핑에 성공한 개수]
+    - 주요 검색 쿼리:
 
     ---
+    ## Post 1: [Post Title]
+    - URL: 
+    - Relevance Score: 
+    - Impact Score: 
+    - 핵심 본문 요약 (1-2문단):
+    
+    ## Post 2: [Post Title]
+    - URL:
+    - Relevance Score:
+    - Impact Score:
+    - 핵심 본문 요약 (1-2문단):
+    
+    (이하 모든 스크래핑된 게시글에 대해 동일한 형식으로 나열)
 
-    ## Article 1: [Article Headline]
-
-    **Source:**
-    **Date:**
-    **URL:**
-    **Category:**
-    **Credibility Score:**
-    **Relevance Score:**
-
-
-    ---
-    [Use this format for all articles...]
-  agent: news_hunter_agent
-  # 아웃풋이 마크다운 형식으로 나오게 함
+  agent: blind_post_hunter
   markdown: true
-  # 이 task 결과물을 저장할 아웃풋 파일 경로 지정
-  output_file: output/content_harvest.md
-  # 필요시 output 디렉토리 생성
+  output_file: output/blind_harvest.md
   create_directory: true
 
 summarization_task:
   description: >
-    Take each of the URLs from the previous task and generate a summary for each article.
+    수집된 각 블라인드 게시글에 대해 본문과 댓글 반응을 결합한 다각도 분석을 수행하십시오.
 
-    Use the scrape tool to extract the full article content from the URL.
-
-    For each article found in the file, create:
-    1. **Headline Summary** (≤280 characters, tweet-style)
-       - Capture the absolute essence in social media format
-       - Focus on the most newsworthy element
-       - Include key numbers or impact metrics when relevant
-
-    2. **Executive Summary** (150–200 words, concise briefing)
-       - Perfect for busy professionals and news skimmers
-       - Include the main development and immediate implications
-       - Mention key players and basic context
-
-    3. **Comprehensive Summary** (500-700 words with full context)
-       - Provide full context and background information
-       - Include multiple perspectives and expert opinions
-       - Explain technical concepts for general audience
-       - Cover implications and future outlook
-
-    Maintain journalistic tone, objectivity, and readability throughout all summary levels.
-    Use metadata from the original articles to guide emphasis and level of detail.
+    분석 포인트:
+    1. **여론 요약 (Vibe Check):** 해당 글에 대해 직장인들이 주로 어떤 반응(긍정, 부정, 중립, 조롱 등)을 보이는지 요약하십시오.
+    2. **핵심 정보 추출 (Insider Info):** 댓글 등에서 언급된 구체적인 정보(연봉, 사내 분위기, 특정 사건 등)가 있다면 추출하십시오.
+    3. **논쟁 지점 (Debate Points):** 해당 주제에 대해 의견이 갈리는 지점이 무엇인지 분석하십시오.
 
   expected_output: >
-    A structured markdown document containing multi-tier summaries with this format:
+    # Community Sentiment Analysis: {topic}
 
-    # News Summaries: {topic}
+    ## [Original Post Title]
+    - **Original URL:** - **핵심 요약:** (직장인 관점에서의 한 줄 요약)
+    - **여론 흐름:** (댓글 반응의 대다수를 차지하는 분위기 설명)
+    - **주요 인사이트:** (이 포스팅을 통해 알 수 있는 업계 내부 정보)
 
-    **Summary Report Overview**
-    - Total articles processed:
-    - Summary generation date:
-
-    ---
-
-    ## Article 1: [Original Headline]
-
-    **Source:**
-    **Date:**
-    **Original URL:**
-
-    ### 📱 Headline Summary (Tweet-length)
-    [280-character summary here...]
-
-    ### 📋 Executive Summary
-    [150-200 word professional briefing here...]
-
-    ### 📖 Comprehensive Summary
-    [300-500 word detailed summary with full context here...]
-
-    **Summary Quality Metrics:**
-    - Recommended audience:
-    - Key topics covered:
-    - Important statistics:
-    - Notable quotes:
-
-    ---
-
-    ## Article 2: [Next Article Headline] 
-
-    [Continue same format for all articles...]
-  agent: summarizer_agent
+  agent: blind_sentiment_summarizer
   markdown: true
-  output_file: output/summary.md
+  output_file: output/blind_summary.md
   create_directory: true
 
 final_report_assembly_task:
   description: >
-    Create the final, publication-ready markdown news briefing by combining all 
-    previous work into a professional, cohesive report suitable for daily publication.
+    요약된 커뮤니티 반응들을 엮어서 "직장인들이 바라보는 {topic}"에 대한 인사이트 리포트를 작성하십시오.
 
-    Assembly process:
-    1. **Follow the editorial plan** from the curation task for structure and flow
-    2. **Apply appropriate summary levels** for each story based on editorial decisions
-    3. **Include editorial transitions** and section introductions from the curation plan
-    4. **Add professional opening** that summarizes the day's key developments
-    5. **Create closing section** that ties together themes and looks ahead
-    6. **Ensure consistent formatting** and professional presentation throughout
-    7. **Include proper attribution** and source references where appropriate
-
-    The final report should read like a premium news briefing from a major publication.
+    리포트 구성:
+    1. **Headline:** {topic}에 대한 현재 커뮤니티의 가장 뜨거운 논점 요약
+    2. **Executive Summary:** 현재 흐름과 이것이 해당 업계에 시사하는 바를 전문적으로 해석
+    3. **Theme Analysis:** 수집된 여러 글들 사이에서 발견되는 공통된 테마(예: 이직 증가, 처우 불만, 특정 기술 선호 등) 분류
+    4. **Conclusion & Outlook:** 이 여론이 향후 해당 업계나 직종에 어떤 영향을 미칠지 예측
 
   expected_output: >
-    A complete, publication-ready markdown document with this professional structure:
+    # {topic} 커뮤니티 여론 분석 리포트
 
-    # Daily News Briefing: {topic}
-
-    **Date:** 
-    **Generated:** 
-    **Stories Covered:** 
-
-    ## Executive Summary
-
-    [Compelling opening paragraph that captures the day's most important developments 
-    and sets context for the full briefing]
+    ## 1. 종합 요약 (Executive Summary)
+    [전반적인 시장 온도와 직장인들의 지배적인 시각 서술]
 
     ---
+    ## 2. 주요 테마별 분석
+    ### 테마 A: [테마 이름]
+    - 관련 내용 및 여론 요약
+    - 업계에 미치는 영향
 
-    ## 🚨 Today's Lead Story
-
-    ### [Compelling headline for lead story]
-
-    [Comprehensive summary with full context, implications, and significance]
-
-    **Source:** [Publication] | **Read more:** [Link](url)
-
-    ---
-
-    ## 📈 Breaking News & Developments
-
-    [Editorial introduction to this section]
-
-    ### [Story Headline]
-    [Executive or comprehensive summary based on editorial plan]
-    **Source:** [Publication] | **Read more:** [Link](url)
-
-    ### [Story Headline]  
-    [Executive or comprehensive summary based on editorial plan]
-    **Source:** [Publication] | **Read more:** [Link](url)
+    ### 테마 B: [테마 이름]
+    - 관련 내용 및 여론 요약
 
     ---
+    ## 3. 전문가 제언 (Editor's Insight)
+    [커리어 혹은 비즈니스 관점에서 이 정보를 어떻게 활용해야 할지 제안]
 
-    ## 💼 Technology & Innovation
-
-    [Editorial introduction to this section]
-
-    ### [Story Headline]
-    [Appropriate summary level based on editorial decisions]
-    **Source:** [Publication] | **Read more:** [Link](url)
-
-    [Continue with all sections as defined in editorial plan...]
-
-    ---
-
-    ## 🎯 Editor's Analysis
-
-    **Key Themes Today:**
-    - [Major trend or theme identified across stories]
-    - [Secondary pattern or development]
-
-    **What This Means:**
-    [Editorial insight about broader implications of the day's news]
-
-    **Looking Ahead:**
-    [What to watch for in coming days based on today's developments]
-
-    ---
-
-    ## 📚 Additional Reading
-
-    **Related Stories:**
-    - [Brief mentions of secondary stories with links]
-
-    **Background Context:**
-    - [Links to important background information for ongoing stories]
-
-    ---
-
-  agent: curator_agent
+  agent: industry_trend_curator
   markdown: true
-  output_file: output/final_report.md
+  output_file: output/final_insight_report.md
   create_directory: true

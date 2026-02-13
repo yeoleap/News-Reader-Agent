@@ -1,75 +1,80 @@
-# News Articles Collection: Cambodia Thai War
+# News Articles Collection: 주담대 블라인드
 **Collection Summary**  
-- Total articles found: 3  
+- Total articles found: 10  
 - Articles after filtering: 1  
 - Duplicates removed: 0  
-- Sources accessed: 3  
-- Search queries used: "Cambodia Thai War news 2026"  
+- Sources accessed: 1 (teamblind.com)  
+- Search queries used: "주담대 블라인드 news"  
 - Search timestamp: 2026-02-13  
 
 ---
 
-## Article 1: After Thailand’s Hawkish Election Win, Cambodia Faces a Narrow Window to Secure the Border  
-**Source:** Cambodianess  
-**Date:** February 10, 2026  
-**URL:** https://cambodianess.com/article/after-thailands-hawkish-election-win-cambodia-faces-a-narrow-window-to-secure-the-border  
-**Category:** Politics / International  
-**Credibility Score:** 8  
-**Relevance Score:** 10  
+## Article 1: 주담대 금리 - 블라인드
+**Source:** teamblind.com  
+**Date:** 13 minutes ago from search time (2026-02-13)  
+**URL:** https://www.teamblind.com/kr/post/%EC%A3%BC%EB%8B%B4%EB%8C%80-%EA%B8%88%EB%A6%AC-a5a05bki  
+**Category:** Business / Real Estate Finance  
+**Credibility Score:** 5  
+**Relevance Score:** 9  
 
-PHNOM PENH— As Thailand’s new government takes power on the back of a nationalist, war-ready campaign, analysts say Cambodia can no longer afford to sit back. Instead, they urge Phnom Penh to double down on self-reliance at home while aggressively internationalizing its diplomacy abroad, warning that the fragile border ceasefire and Thailand’s shifting military posture could quickly unravel.
+---
 
-Since the second round of fighting ended in a December ceasefire, Cambodians have closely followed Thailand’s general election on February 8, hoping a new government would restore cooperation and ease tensions along the border. Those hopes dimmed when caretaker Prime Minister Anutin Charnvirakul secured a decisive victory. His Bhumjaithai Party won 174 constituency seats with 94 percent of the vote and is expected to gain another 19 party-list seats, giving it a commanding 193 seats in the 500-member parliament.
+### Full Article Content:
 
-With a conservative agenda built around national pride, security, and sovereignty now shaping Bangkok’s politics, Cambodia faces the urgent task of reinforcing its own sovereignty amid lingering border uncertainty—and a ceasefire barely a month old.
+블라인드 | 부동산: 주담대 금리 블라인드 기업서비스 채널 부동산 · 주담대 금리 한국토지주택공사 · l********* 작성일 13분 조회수 60 댓글 1 북마크 링크복사 퍼가기 메뉴 더보기
 
-**Could Clashes Be Renewed?**  
-Im Soksamphoas, associate director of the Asian Studies Centre at Michigan State University, said the risk of renewed clashes stems less from public appetite for war than from what she called a “constructed mandate.” With nearly 200 seats, she said, Anutin is now positioned to claim political legitimacy for sustaining heightened military pressure on Cambodia. His victory, she argued, was driven by a campaign that framed national security and external threats as core electoral issues—allowing hardline policies to be sold as the will of the people.
+무엇이 이롭겠습니까 참고로 3년 고정 후 6개월 변동 투표참여 7 하나만 선택할 수 있습니다.  
+- 4.75% 5년 고정 30년 만기 부수조건x  
+- 4.1% 3년 고정 30년 만기 부수조건 3개  
 
-“Anutin’s victory reflects not so much an explicit popular desire for war, but the success of nationalist rhetoric in shaping electoral behavior,” Soksamphoas said. “Voting became an affirmation of identity politics and perceived national strength, rather than a clear mandate for military escalation.”
+투표 결과 미리 보기  
 
-She added that portraying Cambodia as a security threat—drawing on historical grievances dating back to colonial times—has proven to be an effective political tool, enabling Thai leaders to rally support while sidelining pressing domestic socio-economic issues.
+쿠팡에서 반려동물용품 특가를 살펴보세요 공식 APPLE 브랜드관에서 쿠팡 특가로 지금 만나보세요  
 
-Thai scholar Pavin Chachavalpongpun of Kyoto University’s Centre for Southeast Asian Studies warned that renewed border clashes could spiral far beyond a bilateral dispute. He noted that many Thai voters appear to have embraced what he called “fear-driven pragmatism,” prioritizing a hawkish promise of security over democratic reform. During the campaign, Pavin said, Anutin portrayed structural reform as “a luxury Thailand couldn’t afford during a conflict.”
+좋아요 좋아요 댓글 1 공유하기  
+카카오톡 페이스북 트위터 링크복사 퍼가기 공유하기 카카오톡 페이스북 트위터  
 
-“This result doesn’t necessarily mean the majority wants war,” he said. “But it does show a willingness to trade democratic reform for a perceived sense of national security and protection of sovereign territory, as defined by the state’s narrative.”
+https://www.teamblind.com/kr/post/주담대-금리-a5a05bki  
 
-Geopolitical analyst Seng Vanly shared that assessment, arguing that Bhumjaithai’s success gives Bangkok the political capital to keep its military on high alert along the border. He said voters were mobilized more by national sentiment and a strong defense posture than by economic or social policy platforms.
+댓글 1 추천순 시간순 최신순 추천순  
 
-“The rise of the Bhumjaithai Party through a campaign fought on a war footing marks a significant shift in the regional security landscape,” Vanly said.
+- 현대로템 · f******* 와 차이 너무 크다 ㅜ 4.1..? 작성일 11분 좋아요수 좋아요 대댓글  
+- 부동산 추천 글 성지글 하나 쓰고 간다 참고로 나는 무주택이든 다주택이든 혹은 폭등 폭락이든 그런 관점을 얘기하는게 아니다.  
+- SK하이닉스 · i******** 조회수 9661 좋아요 40 서울 전역 토허제 묶고 대출 제한한게 신의 한수네 ㅋㅋㅋ  
+- 서울 전역 토허제 묶었을 때 이게 뭔가 싶었고 새회사 · l********* 조회수 499 좋아요 4 ㅆ1발 손떨리고 눈물나 일년전만해도 서판교 분당 서울 갈수있었는데 하수구탄광촌 기어들어왔어  
+- 결혼 1년만 빨리할걸  
+- 삼성전자 · i********* 조회수 21501 좋아요 53 정부가 시장을 이긴적은 거의 없음  
+- 아가리로 부동산 잡겠다는 통령은 많았음  
+- 삼성디스플레이 · y***** 조회수 227 좋아요 4 위례 위신선 예타확정 아님 위슬람들 또 설레발 치는데  
+- 브랜드무브 · I********* 조회수 297 좋아요 4 자산 영끌해야 (둘이서) 4억넘는데 더 모아서 사야되나 나는 20대..곧 신혼부부라서 여기 게시판 보니까 우린 그지네..현타온다..이거 다 영끌해서라도 구성역이나 처인구 안양 이런데라도 가야되는거야?  
+- AhnLab · i******* 조회수 125 좋아요 0 올파포도 하락 매물이 쏟아집니다~ 참고로 저기 국평 실거래가 최고가 33억이었음  
+- 새회사 · 안**** 조회수 605 좋아요 5 다들 열심히 산다 ㅋㅋ 이러니깐 부동산 상승도 본인 노력이라고 얘기하는건가? ㅋ  
+- 새회사 · i********* 조회수 139 좋아요 5 부동산 공부하면서 깨달은 정권의 특이점 진보당이 집권하면 돈 없는 서민층 삶이 윤택해질 줄 알았고,  
+- 스타벅스커피코리아 · l********* 조회수 263 좋아요 4 지금 반포 갭투 가능해?  
+- 내가 그냥 팔로우하는 어떤 삼성생명 소속 삼성전자 · |******** 조회수 245 좋아요 0 토픽 베스트 썸·연애 술먹고 필름 끊기는 여친 가능 vs 불가  
+- 금융감독원 · 금**** 조회수 14667 좋아요 12 결혼생활 남편이 여친과 헤어졌다  
+- 새회사 · m********* 조회수 6820 좋아요 47 주식·투자 나대지말고 사라는 거 사고 있나? 대신증권  
+- 새회사 · 나** 조회수 3187 좋아요 18 부동산 지금 부동산은 확연한 거품이야  
+- 의사 · •********* 조회수 17892 좋아요 123  
+- 블라블라 우리팀에 자활근로 하는 20살짜리 여자애있거든??ㅎㅎ  
+- 공무원 · 사** 조회수 9939 좋아요 156 부동산 2년뒤에 사고 엄청 날듯ㅋㅋㅋ  
+- 삼성디스플레이 · y***** 조회수 8289 좋아요 32 부동산 강남 40억 아파트 연 1억씩 세금 물리면 왜 안됨?  
+- 의사 · U**** 조회수 1489 좋아요 8 결혼생활 과거있는 여자와 결혼한 형님들 계시나요  
+- 새회사 · !********* 조회수 2912 좋아요 2 결혼생활 임신한 사람은 문상가면 안된다는 미신  
+- 스타벅스커피코리아 · l********* 조회수 11002 좋아요 9 육아 차없는 집 육아선배님들~~~!  
+- 공무원 · l******** 조회수 680 좋아요 1  
 
-**Will The New ASEAN Chair Step In?**  
-All three analysts pointed to the challenges facing the Philippines as ASEAN chair in 2026, particularly in managing a renewed Cambodia–Thailand border crisis.
+블라인드에 광고하세요! 이메일 문의 또는 폼을 통해 연락처를 남겨주시면 최대한 빠르게 안내해 드리겠습니다  
+블라인드 광고 자세히 보기  
 
-Pavin warned that if ASEAN’s long-standing principle of non-interference leaves the bloc appearing powerless, fresh clashes could invite intervention from major powers such as the United States and China—turning the dispute into a broader proxy conflict.
+블라인드 앱에서 더 많은 컨텐츠를 이용하실 수 있어요.  
+회사 인증하고! 뉴스보다 빠른 우리회사 핫이슈를 확인해보세요.  
+같은 업계, 같은 직군 사람들과 즐겁게 이야기를 나눠보세요.  
+이직, 커리어부터 회사 생활 조언까지  
 
-He suggested that Philippine President Ferdinand Marcos Jr. may try to move beyond the largely passive approach seen under Malaysia’s 2025 chairmanship, but cautioned that ASEAN’s structural limits remain a serious obstacle.
+APP STORE 앱 다운로드  
+GOOGLE PLAY 앱 다운로드  
 
-“ASEAN’s principle of non-interference is still a major hurdle,” he said.
+---
 
-Vanly said the ASEAN chair would likely move quickly and neutrally, launching shuttle diplomacy to prevent economic fallout and bring both sides to the table—possibly through the ASEAN Regional Forum or an ad hoc mechanism. Still, he warned that a Thai government emboldened by a strong domestic mandate may be difficult to influence.
-
-“The chair’s leverage will be limited unless de-escalation is framed as essential to ASEAN’s collective economic security and its central role in Indo-Pacific stability,” he said.
-
-Soksamphoas expressed hope that the Philippines would actively monitor the border and step in as a mediator if violence returns, following the example set by Malaysia.
-
-“Peace and stability here should not be treated as a purely bilateral issue,” she said. “It is a regional imperative. Sustainable growth and long-term resilience depend on peace, stability, and mutual trust among ASEAN member states.”
-
-**What Cambodia Should Do**  
-Pavin urged Cambodia to immediately multilateralize the dispute to prevent Thailand from entrenching what he described as an “advance-size-level” military strategy. He said Phnom Penh should systematically document and publicize Thai activities—such as the placement of shipping containers—and raise them at the UN Security Council and within ASEAN.
-
-He also called for the rapid deployment of ASEAN observer teams to provide an international presence on the ground, while engaging both Washington and Beijing to apply coordinated diplomatic pressure on Bangkok.
-
-“Use the $45 million U.S. aid pledge and China’s neutrality to push Thailand back to the December 27 Joint Statement,” Pavin said. “Cambodia’s best defense is to ensure Thai military moves are seen not as sovereign reclamation, but as violations of international norms that threaten regional trade and stability.”
-
-Echoing that view, Vanly said Cambodia must legalize and internationalize its position before Thai policies are fully implemented. He recommended depositing high-precision maritime and land maps with the United Nations and sharing them with ASEAN members to establish a solid legal foundation.
-
-Vanly also suggested accelerating civilian development along the border by creating economic zones that serve as a “human shield” of legitimate commercial and social interests.
-
-“Strengthening readiness isn’t just about the military,” he said. “It also means fast-tracking civilian infrastructure and economic development along the border.”
-
-Soksamphoas stressed that the deeper challenge for Cambodia is internal. She argued the country must build greater self-reliance across political, economic, and cultural spheres, moving away from an unsustainable dependence on external actors.
-
-“These tensions should be both a lesson and a wake-up call,” she said. “Cambodia needs to uphold its cultural values, take pride in its rich history, and also reflect honestly on darker chapters of the past.”
-
-For long-term security, she added, Cambodia must invest in human capital and institutional strength, and nurture a new generation of leaders who are innovative and committed to the collective national interest—critical safeguards for the country’s future stability and growth.
+This article contains a recent post discussing 주담대 (housing loan) interest rates on a credible internal discussion platform "Blind," including comparison of fixed rates, user comments, and discussions related to housing finance conditions in Korea. The article is relevant and detailed enough for the topic requested.
